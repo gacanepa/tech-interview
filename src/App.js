@@ -16,8 +16,11 @@ const innerDivStyle = {
 const App = () => {
   const [count, setCount] = useState(1);
 
-  // We are using the state in these two functions incorrectly.
-  // What is the problem and how do we fix it?
+  /*  
+  QUESTION #1:
+  Compare the count inside of these two functions and the value in line 47.
+  What causes the difference between the output of the console.log and the state?
+  */
 
   const increment = () => {
     setCount(count + 1);
@@ -33,7 +36,16 @@ const App = () => {
     const fetchTeams = async () => {
       const response = await fetch('https://data.nba.net/prod/v1/current/standings_division.json');
       const teams = await response.json();
-      // Explore the API response and get the team name and nickname where winPct is > 0.6 (southwest conference)
+
+      // Write functions to perform the following. Place them outside the useEffect and use them here.
+      /*
+      QUESTION #2:
+      Explore the API response and get the team name(s) and nickname(s) where winPct is > 0.6 (southwest conference)
+      */
+      /*
+      QUESTION #3:
+      Get the team with teamId 1610612748 (southeast conference)
+      */
       console.log({ teams });
     }
 
