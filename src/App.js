@@ -18,7 +18,7 @@ const App = () => {
 
   /*  
   QUESTION #1:
-  Compare the count inside of these two functions and the value in line 47.
+  Compare the count inside of these two functions and the value in line 59.
   What causes the difference between the output of the console.log and the state?
   */
 
